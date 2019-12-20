@@ -1,7 +1,7 @@
 def turn_count(board)
   num_turns = 0
   board.each do |player|
-    if (player != "" || player != " ")
+    if (player != "" or player != " ")
       num_turns += 1
     end
   end
