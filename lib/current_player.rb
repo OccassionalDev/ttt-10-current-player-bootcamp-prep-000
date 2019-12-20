@@ -5,4 +5,18 @@ def turn_count(board)
       num_turns += 1
     end
   end
+  return num_turns
+end
+
+
+def current_player(board)
+  turn_amt = turn_count(board)
+  
+  if (turn_amt%2 == 0)
+    return "X"
+  
+  else
+    return "O"
+  
+  end
 end
